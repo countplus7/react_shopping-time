@@ -1,0 +1,33 @@
+{
+  "name": "shopping-time",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^11.6.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.0",
+    "react-simple-image-slider": "^2.4.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "npm-check": "^6.0.1",
+    "vite": "^6.2.6"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "pnpm serve -s dist",
+    "test": "vite test",
+    "server": "node src/database/index.mjs",
+    "check-deps": "npm-check"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild",
+      "protobufjs"
+    ]
+  }
+}
